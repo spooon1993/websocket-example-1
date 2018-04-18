@@ -28,6 +28,6 @@ io.on('connection', (client) => {
 });
 
 app.use(express.static('../build'));
-server.listen(PORT, () => {
+server.listen(PORT_Heroku || PORT, () => {
     console.log(`Server is started on port №${PORT}`);
 });
